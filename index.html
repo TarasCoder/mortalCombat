@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,14 @@
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
    <link rel="stylesheet" href="css/style.css">
    <title>Mortal Kombat</title>
 
 </head>
-<body>
 
-   <div class="app">
+<body>
+   <div class="app" id="app">
       <header class="header">
          <a href="#" class="logo">
             <img src="img/logo.svg" alt="Logo" class="logo-image">
@@ -32,20 +34,24 @@
             <span class="age">18+</span>
          </div>
          <div class="description">
-            Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший
+            Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только
+            сильнейший
          </div>
          <div class="button-group">
-            <button class="button button-primary">Предзаказ фильма</button>
-            <button class="button button-default">
+            <a data-fancybox data-type="iframe" data-src="http://codepen.io/fancyapps/full/jyEGGG/" href="javascript:;" class="button button-primary">Предзаказ фильма</a>
+            <a data-fancybox href="https://www.youtube.com/watch?v=1ar_V1_uatA" class="button button-default">
                <img src="img/Vector.svg" alt="icon: play" class="button-icon">
                <span class="button-text">Смотреть трейлер</span>
-            </button>
+            </a>
          </div>
       </section>
    </div>
 
-
-
-<script src="js/app.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="js/jquery.vide.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+   <script src="js/app.js"></script>
 </body>
+
 </html>
