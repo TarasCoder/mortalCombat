@@ -97,6 +97,17 @@ a {
    margin-left: 10px;
    vertical-align: text-bottom;
 }
+.inp{
+   margin-bottom: 10px;
+   border-radius: 10px;
+   padding: 0 10px;
+   outline: none;
+}
+.btn-sub{
+   border-radius: 10px;
+   display: block;
+   outline: none;
+}
 @media (max-width: 768px){
    .app {
       height: auto;
